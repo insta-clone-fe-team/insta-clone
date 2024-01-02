@@ -2,3 +2,8 @@
   display: flex;
   flex-direction: center;
 }
+
+.iphone-img img {
+  width: 470px;
+  height: 630x;
+}

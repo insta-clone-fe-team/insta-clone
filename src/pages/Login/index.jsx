@@ -5,11 +5,13 @@ import "./index.css";
 
 const Login = () => {
   return (
-    <div class="login-container">
+    <div className="main-container">
       <div class="phone-contatiner">
         <Phone></Phone>
       </div>
-      <LoginForm></LoginForm>
+      <div class="login-container">
+        <LoginForm></LoginForm>
+      </div>
     </div>
   );
 };
