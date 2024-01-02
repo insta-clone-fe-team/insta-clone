@@ -6,7 +6,7 @@ import "./index.css";
 const Login = () => {
   return (
     <div class="login-container">
-      <div clsdd="phone-contatiner">
+      <div class="phone-contatiner">
         <Phone></Phone>
       </div>
       <LoginForm></LoginForm>
