@@ -14,8 +14,8 @@
 
   width: 350px;
   height: 400px;
-  margin: 0 0 10px;
-  padding: 10px 0;
+  margin: 0px 0px 10px;
+  padding: 10px 0px;
 }
 
 .login-title {
@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 50px;
+  padding: 0px 50px;
 }
 
 input {
@@ -53,8 +53,11 @@ input {
 }
 
 .insta-login button {
-  background-color: #65b5fa;
+  /* background-color: #65b5fa;
+  color: #0095f6; */
+
   color: #fff;
+  font-weight: bold;
   border: none;
   border-radius: 8px;
 
@@ -84,6 +87,13 @@ input {
   height: 16px;
 }
 
+.error-msg {
+  color: #ed4956;
+  font-size: 14px;
+  width: 270px;
+  margin: 10px 40px;
+}
+
 .forgot-password button {
   color: #00376b;
   font-size: 12px;
@@ -103,7 +113,7 @@ input {
   width: 350px;
   height: 60px;
   margin: 0px 0px 10px;
-  padding: 10px 0;
+  padding: 10px 0px;
 }
 
 .signup-text {
@@ -145,5 +155,5 @@ input {
 .google-play img {
   width: 130px;
   height: 40px;
-  margin: 0 10px;
+  margin: 0px 10px;
 }
