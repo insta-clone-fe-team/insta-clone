@@ -9,8 +9,32 @@ body {
   background-color: white;
   color: black;
 }
+svg {
+  color: red;
+  fill: currentColor;
+}
+.menu-single-wrap {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.menu-single-wrap:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.menu-single-wrap span {
+  padding-left: 16px;
+}
+@media (max-width: 1200px) {
+  .menu-single-wrap span {
+    display: none;
+  }
 }
