@@ -2,15 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 .phone-container {
 }
 
 .login-container {
-}
-
-.app-container {
 }
 
 .footer-container {

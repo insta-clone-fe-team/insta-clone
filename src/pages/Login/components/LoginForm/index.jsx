@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
 import ForgotPassword from "../ForgotPassword";
+import SignUp from "../SignUp";
+import AppDownload from "../AppDownload";
 
 const LoginForm = () => {
   const navigate = useNavigate();
@@ -72,8 +74,11 @@ const LoginForm = () => {
             </a>
           </div>
           <div className="error-msg">{error}</div>
+          <ForgotPassword />
         </div>
       </div>
+      <SignUp />
+      <AppDownload />
     </div>
   );
 };

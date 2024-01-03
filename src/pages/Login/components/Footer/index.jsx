@@ -48,7 +48,7 @@ const Footer = () => {
         <a href="/https://www.instagram.com/explore/locations/">위치</a>
         <a href="/https://www.instagram.com/web/lite/">Instagram Lite</a>
         <a
-          href="/https://www.threads.net/login?show_choice_screen=0"
+          href="https://www.threads.net/login"
           target="_blank"
           rel="noopener noreferrer"
         >
