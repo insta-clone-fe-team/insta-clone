@@ -1,10 +1,17 @@
 .main-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+
+.phone-container {
 }
 
 .login-container {
 }
-.phone-contatiner {
+
+.app-container {
+}
+
+.footer-container {
 }

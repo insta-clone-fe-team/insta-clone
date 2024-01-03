@@ -1,0 +1,11 @@
+.forgot-password button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+
+  color: #00376b;
+  font-size: 12px;
+
+  margin: 10px 40px;
+}

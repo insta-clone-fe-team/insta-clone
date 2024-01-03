@@ -43,15 +43,6 @@ input {
   height: 20px;
 }
 
-.facebook-login button,
-.forgot-password button,
-.signup-button button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
-
 .insta-login button {
   /* background-color: #65b5fa;
   color: #0095f6; */
@@ -80,6 +71,11 @@ input {
 }
 
 .facebook-login button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+
   color: #385185;
   font-size: 14px;
 
@@ -92,68 +88,4 @@ input {
   font-size: 14px;
   width: 270px;
   margin: 10px 40px;
-}
-
-.forgot-password button {
-  color: #00376b;
-  font-size: 12px;
-
-  margin: 10px 40px;
-}
-
-.signup-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  box-sizing: border-box;
-  border-radius: 1px;
-  border: 1px solid #dbdbdb;
-
-  width: 350px;
-  height: 60px;
-  margin: 0px 0px 10px;
-  padding: 10px 0px;
-}
-
-.signup-text {
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.signup-button button {
-  color: #3897f0;
-
-  font-size: 14px;
-}
-
-.app-download {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.app-text {
-  width: 310px;
-  height: 20px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.app-download_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: 45px;
-  margin: 8px 0px;
-}
-
-.app-store img,
-.google-play img {
-  width: 130px;
-  height: 40px;
-  margin: 0px 10px;
 }
