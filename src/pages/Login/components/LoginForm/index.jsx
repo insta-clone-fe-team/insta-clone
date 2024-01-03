@@ -20,13 +20,13 @@ const LoginForm = () => {
             />
             <input id="password" type="password" placeholder="비밀번호" />
           </div>
-
-          <button type="button" onClick={handleLogin}>
-            로그인
-          </button>
+          <div className="insta-login">
+            <button type="button" onClick={handleLogin}>
+              로그인
+            </button>
+          </div>
         </form>
         <div className="bottom">
-          <div>---------- 또는 ----------</div>
           <div className="facebook-login">
             <img src="facebook.png"></img>
             <button>Facebook으로 로그인</button>
@@ -36,17 +36,21 @@ const LoginForm = () => {
           </div>
         </div>
       </div>
-      <div className="login-bottom">
-        계정이 없으신가요?
-        <button>가입하기</button>
+      <div className="signup-section">
+        <div className="signup-text"> 계정이 없으신가요?</div>
+        <div className="signup-button">
+          <button>가입하기</button>
+        </div>
       </div>
       <div className="app-download">
-        앱을 다운로드하세요.
-        <div className="app-store">
-          <img src="appstore.png"></img>
-        </div>
-        <div className="google-play">
-          <img src="googleplay.png"></img>
+        <div className="app-text">앱을 다운로드하세요.</div>
+        <div className="app-download_img">
+          <div className="app-store">
+            <img src="appstore.png"></img>
+          </div>
+          <div className="google-play">
+            <img src="googleplay.png"></img>
+          </div>
         </div>
       </div>
     </div>

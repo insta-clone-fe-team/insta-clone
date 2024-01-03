@@ -22,7 +22,7 @@
   font-family: "Lobster", cursive;
   font-weight: bold;
   font-size: 40px;
-  padding: 40px 80px 40px 80px;
+  padding: 40px 80px;
 }
 
 .login-form {
@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 50px 0 50px;
+  padding: 0 50px;
 }
 
 input {
@@ -43,10 +43,18 @@ input {
   height: 20px;
 }
 
-button {
+.facebook-login button,
+.forgot-password button,
+.signup-button button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.insta-login button {
   background-color: #65b5fa;
   color: #fff;
-  padding: 10px;
   border: none;
   border-radius: 8px;
 
@@ -55,76 +63,88 @@ button {
   margin: 8px 40px;
 }
 
-.bottom {
-  margin-bottom: 20px;
-}
-
 .facebook-login {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin: 8px 40px;
 }
 
 .facebook-login img {
   width: 16px;
   height: 16px;
-  margin: 0px 8px 0px 8px;
+  margin: 0px 8px;
 }
 
 .facebook-login button {
-  background: none;
-  border: none;
   color: #385185;
-  cursor: pointer;
-  width: 130px;
-  height: 16px;
   font-size: 14px;
-  font-weight: bold;
+
+  width: 150px;
+  height: 16px;
 }
 
 .forgot-password button {
-  background: none;
-  border: none;
   color: #00376b;
-  cursor: pointer;
   font-size: 12px;
+
+  margin: 10px 40px;
 }
 
-.login-bottom {
+.signup-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   box-sizing: border-box;
   border-radius: 1px;
   border: 1px solid #dbdbdb;
 
   width: 350px;
   height: 60px;
-  margin: 0 0 10px;
+  margin: 0px 0px 10px;
   padding: 10px 0;
+}
 
+.signup-text {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
 }
 
-.login-bottom button {
-  background: none;
-  border: none;
+.signup-button button {
   color: #3897f0;
-  cursor: pointer;
-  font-weight: bold;
+
+  font-size: 14px;
 }
 
 .app-download {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.app-store img {
-  width: 130px;
-  height: 40px;
+.app-text {
+  width: 310px;
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
 }
 
+.app-download_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 45px;
+  margin: 8px 0px;
+}
+
+.app-store img,
 .google-play img {
   width: 130px;
   height: 40px;
+  margin: 0 10px;
 }
