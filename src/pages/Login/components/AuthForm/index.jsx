@@ -104,8 +104,12 @@ const AuthForm = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="facebook.png"></img>
-                <button>Facebook으로 로그인</button>
+                <button>
+                  <span>
+                    <img src="facebook.png"></img>
+                    Facebook으로 로그인
+                  </span>
+                </button>
               </a>
             </div>
 
