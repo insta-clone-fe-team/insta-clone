@@ -1,19 +1,13 @@
 import React from "react";
 import "./index.css";
-import Phone from "./components/Phone";
-import LoginForm from "./components/LoginForm";
+import AuthForm from "./components/AuthForm";
 import Footer from "./components/Footer";
 
 const Login = () => {
   return (
     <>
       <div className="main-container">
-        <div class="phone-contatiner">
-          <Phone />
-        </div>
-        <div class="login-container">
-          <LoginForm />
-        </div>
+        <AuthForm />
       </div>
       <div className="footer-container">
         <Footer />
