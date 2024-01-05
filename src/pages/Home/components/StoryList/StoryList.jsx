@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./index.css";
+import defualtAvatar from "../../../../assets/defualtAvatar.jpg";
 
 const StoryList = () => {
   const storyData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5];
@@ -29,7 +30,14 @@ const StoryList = () => {
         {storyData.map((item) => {
           return (
             <div className="story-single">
-              <div className="story-avatar"></div>
+              <div className="story-avatar">
+                <div className="story-avatar-gap">
+                  <img
+                    src={defualtAvatar}
+                    className="story-avatar-avatar"
+                  ></img>
+                </div>
+              </div>
               <div>name</div>
             </div>
           );
