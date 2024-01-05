@@ -3,7 +3,7 @@ import "./index.css";
 import AuthForm from "./components/AuthForm";
 import Footer from "./components/Footer";
 
-const Login = () => {
+const Auth = () => {
   return (
     <>
       <div className="main-container">
@@ -16,4 +16,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Auth;
