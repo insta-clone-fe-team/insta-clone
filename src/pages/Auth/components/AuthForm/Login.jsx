@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+import useLogin from "../../../../hooks/useLogin";
 
-const LoginPage = () => {
+const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [inputs, setInputs] = useState({
     email: "",
     password: "",
   });
+
+  const { loading, error, login } = useLogin();
+
   const isValid = inputs.email.includes("@") && inputs.password.length >= 5;
 
   return (
@@ -24,9 +28,16 @@ const LoginPage = () => {
         value={inputs.password}
         onChange={(e) => setInputs({ ...inputs, password: e.target.value })}
       />
+      {error && (
+        <div className="error-msg">
+          <span>{error.message}</span>
+        </div>
+      )}
       <button
         type="button"
         disabled={!isLogin}
+        onClick={() => login(inputs)}
+        isLoading={loading}
         style={{
           backgroundColor: isValid ? "#0095f6" : "#65b5fa",
         }}
@@ -37,4 +48,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;

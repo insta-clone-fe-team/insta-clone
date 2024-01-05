@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import useSignUpwithEmailAndPassword from "../../../../hooks/useSignUpwithEmailAndPassword";
 
 const Signup = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -9,7 +10,7 @@ const Signup = () => {
     password: "",
   });
 
-  const [showPassword, setShowPassword] = useState(false);
+  const { loading, error, signup } = useSignUpwithEmailAndPassword();
 
   const isValid = inputs.email.includes("@") && inputs.password.length >= 5;
 
@@ -38,14 +39,21 @@ const Signup = () => {
       />
       <input
         id="password"
-        type={showPassword ? "text" : "password"}
+        type="password"
         placeholder="비밀번호"
         value={inputs.password}
         onChange={(e) => setInputs({ ...inputs, password: e.target.value })}
       />
+      {error && (
+        <div className="error-msg">
+          <span>{error.message}</span>
+        </div>
+      )}
       <button
         type="button"
         disabled={!isLogin}
+        isloading={loading}
+        onClick={() => signup(inputs)}
         style={{
           backgroundColor: isValid ? "#0095f6" : "#65b5fa",
         }}
