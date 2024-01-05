@@ -35,7 +35,6 @@ const AuthForm = () => {
             <div className="facebook-login">
               <FacebookAuth />
             </div>
-
             <div className="forgot-password">
               {isLogin && (
                 <div className="forgot-password">
