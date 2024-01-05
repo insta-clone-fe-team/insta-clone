@@ -13,6 +13,7 @@ import ThreadsIcon from "./components/icons/ThreadsIcon";
 import defualtAvatar from "../../assets/defualtAvatar.jpg";
 import "./index.css";
 import Profile from "./components/icons/Profile";
+import LogoutIcon from "./components/icons/LogoutIcon";
 
 const SideBar = () => {
   return (
@@ -31,6 +32,7 @@ const SideBar = () => {
       </div>
       <ThreadsIcon></ThreadsIcon>
       <MoreIcon></MoreIcon>
+      <LogoutIcon></LogoutIcon>
     </div>
   );
 };
