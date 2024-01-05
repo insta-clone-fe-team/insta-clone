@@ -11,7 +11,8 @@
   }
 }
 
-.main-menu {
+.main-menu,
+.logout-menu {
   display: flex;
   flex-direction: column;
   padding-top: 22px;

@@ -14,8 +14,10 @@ import defualtAvatar from "../../assets/defualtAvatar.jpg";
 import "./index.css";
 import Profile from "./components/icons/Profile";
 import LogoutIcon from "./components/icons/LogoutIcon";
+import useLogout from "../../hooks/useLogout";
 
 const SideBar = () => {
+  const { handleLogout, isLoggingOut } = useLogout();
   return (
     <div className="sidebar-wrapper">
       {/* <InsIcon></InsIcon> */}
@@ -32,7 +34,15 @@ const SideBar = () => {
       </div>
       <ThreadsIcon></ThreadsIcon>
       <MoreIcon></MoreIcon>
-      <LogoutIcon></LogoutIcon>
+      <div className="logout-menu">
+        <button
+          onClick={handleLogout}
+          isLoggingOut={isLoggingOut}
+          style={{ background: "none", border: "none" }}
+        >
+          <LogoutIcon></LogoutIcon>
+        </button>
+      </div>
     </div>
   );
 };

@@ -8,7 +8,6 @@ const useSignUpwithEmailAndPassword = () => {
     useCreateUserWithEmailAndPassword(auth);
 
   const loginUser = useAuthStore((state) => state.login);
-  // const logoutUser = useAuthStore((state) => state.logout);
 
   const signup = async (inputs) => {
     if (

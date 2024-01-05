@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useLogin from "../../../../hooks/useLogin";
 
-const LoginPage = () => {
+const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [inputs, setInputs] = useState({
     email: "",
@@ -48,4 +48,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;
