@@ -19,6 +19,7 @@ svg {
   align-items: center;
   border-radius: 8px;
   margin-bottom: 8px;
+  position: relative;
 }
 
 .menu-single-wrap:hover {
@@ -38,3 +39,10 @@ code {
     display: none;
   }
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* a:visited {
+  color: blue;
+} */

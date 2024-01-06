@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import useLogout from "../../../../hooks/useLogout";
+import LogoutIcon from "./LogoutIcon";
 
 const MoreIcon = () => {
+  const [visible, setVisible] = useState(false);
+  const { handleLogout, isLoggingOut } = useLogout();
   return (
     <a>
-      <div className="menu-single-wrap">
+      <div
+        className="menu-single-wrap"
+        onClick={() => setVisible((prev) => !prev)}
+      >
         <svg
           aria-label="설정"
           class="x1lliihq x1n2onr6 x5n08af"
@@ -49,6 +56,28 @@ const MoreIcon = () => {
           ></line>
         </svg>
         <span>더 보기</span>
+        {visible ? (
+          <div
+            style={{
+              position: "absolute",
+              top: "-400px",
+              left: "0",
+              display: "flex",
+              flexDirection: "column",
+              width: "250px",
+              height: "388px",
+              backgroundColor: "yellowgreen",
+            }}
+          >
+            <button
+              onClick={handleLogout}
+              isLoggingOut={isLoggingOut}
+              style={{ background: "none", border: "none" }}
+            >
+              <LogoutIcon></LogoutIcon>
+            </button>
+          </div>
+        ) : null}
       </div>
     </a>
   );

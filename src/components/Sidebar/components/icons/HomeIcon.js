@@ -1,7 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 const HomeIcon = ({ style }) => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/");
+  };
   return (
     <a>
-      <div className="menu-single-wrap">
+      <div className="menu-single-wrap" onClick={handleClick}>
         <svg
           aria-label="홈"
           fill="currentColor"

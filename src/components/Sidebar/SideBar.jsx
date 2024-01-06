@@ -17,7 +17,7 @@ import LogoutIcon from "./components/icons/LogoutIcon";
 import useLogout from "../../hooks/useLogout";
 
 const SideBar = () => {
-  const { handleLogout, isLoggingOut } = useLogout();
+  // const { handleLogout, isLoggingOut } = useLogout();
   return (
     <div className="sidebar-wrapper">
       {/* <InsIcon></InsIcon> */}
@@ -34,7 +34,7 @@ const SideBar = () => {
       </div>
       <ThreadsIcon></ThreadsIcon>
       <MoreIcon></MoreIcon>
-      <div className="logout-menu">
+      {/* <div className="logout-menu">
         <button
           onClick={handleLogout}
           isLoggingOut={isLoggingOut}
@@ -42,7 +42,7 @@ const SideBar = () => {
         >
           <LogoutIcon></LogoutIcon>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

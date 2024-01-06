@@ -3,47 +3,36 @@ import "./index.css";
 import defualtAvatar from "../../../../assets/defualtAvatar.jpg";
 
 const StoryList = () => {
-  const storyData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5];
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const containerRef = useRef();
+  const [dataList, setDataList] = useState([]);
+
+  const requestData = async () => {
+    const res = await fetch("https://reqres.in/api/users?page=1&per_page=10", {
+      method: "GET",
+    });
+    const data = await res.json();
+    setDataList(data.data);
+  };
 
   useEffect(() => {
-    containerRef.current.addEventListener("scroll", () => {
-      setScrollPosition(containerRef.current.scrollY);
-    });
+    requestData();
   }, []);
-
-  const handleScroll = (scrollAmount) => {
-    // Calculate the new scroll position
-    const newScrollPosition = scrollPosition + scrollAmount;
-
-    // Update the state with the new scroll position
-    // setScrollPosition(newScrollPosition);
-
-    // Access the container element and set its scrollLeft property
-    containerRef.current.scrollRight = newScrollPosition;
-  };
 
   return (
     <div className="story-list-container">
-      <div className="story-list-wrapper" ref={containerRef}>
-        {storyData.map((item) => {
+      <div className="story-list-wrapper">
+        {dataList.map((item) => {
           return (
             <div className="story-single">
               <div className="story-avatar">
                 <div className="story-avatar-gap">
-                  <img
-                    src={defualtAvatar}
-                    className="story-avatar-avatar"
-                  ></img>
+                  <img src={item.avatar} className="story-avatar-avatar"></img>
                 </div>
               </div>
-              <div>name</div>
+              <div>{item.first_name}</div>
             </div>
           );
         })}
       </div>
-      {/* <button onClick={() => handleScroll(100)}>move</button> */}
     </div>
   );
 };

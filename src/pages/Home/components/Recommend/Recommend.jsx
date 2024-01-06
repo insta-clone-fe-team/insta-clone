@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import defaultAvatar from "../../../../assets/defualtAvatar.jpg";
 
-const Recommend = () => {
-  const listData = [1, 2, 3, 4, 5];
+const Recommend = ({ data }) => {
+  const [listData, setListData] = useState([]);
+
+  const requestData = async () => {
+    const res = await fetch("https://reqres.in/api/users?page=2&per_page=5", {
+      method: "GET",
+    });
+    const data = await res.json();
+    setListData(data.data);
+  };
+
+  useEffect(() => {
+    requestData();
+  }, []);
   const Account = ({ avatar, name, text }) => {
     return (
       <div
@@ -32,7 +44,11 @@ const Recommend = () => {
   };
   return (
     <div className="recommend-list-container">
-      <Account avatar={defaultAvatar} name="hayyy" text="전환"></Account>
+      <Account
+        avatar={defaultAvatar}
+        name={data.username}
+        text="전환"
+      ></Account>
       <div
         style={{
           display: "flex",
@@ -48,7 +64,11 @@ const Recommend = () => {
       </div>
       {listData.map((item) => {
         return (
-          <Account avatar={defaultAvatar} name={item} text="팔로우"></Account>
+          <Account
+            avatar={item.avatar}
+            name={item.last_name}
+            text="팔로우"
+          ></Account>
         );
       })}
     </div>

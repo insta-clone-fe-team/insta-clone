@@ -1,0 +1,21 @@
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.profile-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #737373;
+  padding: 30px 0;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
