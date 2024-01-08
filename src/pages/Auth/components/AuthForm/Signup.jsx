@@ -34,7 +34,7 @@ const Signup = () => {
         id="username"
         type="text"
         placeholder="사용자 이름"
-        value={inputs.usernamename}
+        value={inputs.username}
         onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
       />
       <input
