@@ -3,6 +3,7 @@
   flex-direction: column;
   flex: 1;
   align-items: center;
+  padding: 10px;
 }
 
 .poster-single-wrap {
@@ -16,11 +17,25 @@
 .poster-header {
   display: flex;
   align-items: center;
-  position: relative;
+  font-size: 14px;
+  padding: 0px 4px 8px 4px;
 }
-.poster-more {
-  position: absolute;
-  right: 0;
+
+.poster-avatar,
+.poster-name,
+.poster-date {
+  padding-right: 10px;
+}
+
+.poster-follow button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0;
 }
 
 .poster-avatar {
@@ -29,8 +44,19 @@
   border-radius: 50%;
 }
 
+.poster-name {
+  font-weight: bold;
+}
+
+.poster-date {
+  color: #a8a8a8;
+}
+
 .poster-banner {
   width: 468px;
   height: 585px;
-  background-color: aqua;
+}
+
+.poster-footer {
+  padding: 8px 4px;
 }

@@ -14,7 +14,7 @@ const Home = () => {
       <div className="home-layout">
         <div className="home-center-area">
           <StoryList></StoryList>
-          <Poster></Poster>
+          <Poster />
         </div>
         <Recommend data={data}></Recommend>
       </div>

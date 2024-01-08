@@ -1,6 +1,6 @@
 import React from "react";
 
-const LikeIcon = () => {
+const Comment = () => {
   return (
     <a>
       <svg
@@ -25,4 +25,4 @@ const LikeIcon = () => {
   );
 };
 
-export default LikeIcon;
+export default Comment;
