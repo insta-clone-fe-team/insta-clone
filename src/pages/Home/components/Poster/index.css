@@ -51,6 +51,14 @@
   color: #a8a8a8;
 }
 
+.poster-name {
+  font-weight: bold;
+}
+
+.poster-date {
+  color: #a8a8a8;
+}
+
 .poster-banner {
   width: 468px;
   /* height: 585px; */
