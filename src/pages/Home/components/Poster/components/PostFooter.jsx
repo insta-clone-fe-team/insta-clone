@@ -24,44 +24,55 @@ const PostFooter = ({ username, likes }) => {
 
   return (
     <>
-      <div className="icon-section" style={{ paddingBottom: "8px" }}>
-        <button
-          onClick={handleLike}
-          style={{
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          {!liked ? <UnLike /> : <Like />}
-        </button>
-        <button
-          style={{
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          <Comment />
-        </button>
-        <button
-          style={{
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          <Share />
-        </button>
-        <button
-          style={{
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          <Save />
-        </button>
+      <div
+        className="icon-section"
+        style={{
+          paddingBottom: "8px",
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "flex-start" }}>
+          <button
+            onClick={handleLike}
+            style={{
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+            }}
+          >
+            {!liked ? <UnLike /> : <Like />}
+          </button>
+          <button
+            style={{
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+            }}
+          >
+            <Comment />
+          </button>
+          <button
+            style={{
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+            }}
+          >
+            <Share />
+          </button>
+        </div>
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <button
+            style={{
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+            }}
+          >
+            <Save />
+          </button>
+        </div>
       </div>
 
       <div className="bottom-section">
@@ -72,7 +83,8 @@ const PostFooter = ({ username, likes }) => {
           className="user-text"
           style={{ fontWeight: "600", marginTop: "8px", marginBottom: "8px" }}
         >
-          {username} {""} <span style={{ fontWeight: "400" }}>hello</span>
+          {username} {""}{" "}
+          <span style={{ fontWeight: "400" }}>post caption</span>
         </div>
         <button
           className="view-more"
