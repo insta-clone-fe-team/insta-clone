@@ -1,6 +1,11 @@
+@media (max-width: 840px) {
+  .iphone-img img {
+    display: none;
+  }
+}
+
 .phone-container {
   display: flex;
-  flex-direction: center;
 }
 
 .iphone-img img {
