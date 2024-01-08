@@ -21,7 +21,6 @@
   padding: 0px 4px 8px 4px;
 }
 
-.poster-avatar,
 .poster-name,
 .poster-date {
   padding-right: 10px;
@@ -41,7 +40,7 @@
 .poster-avatar {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
+  border-radius: 16px;
 }
 
 .poster-name {
@@ -54,7 +53,7 @@
 
 .poster-banner {
   width: 468px;
-  height: 585px;
+  /* height: 585px; */
 }
 
 .poster-footer {

@@ -47,8 +47,8 @@ const Profile = () => {
                 {data.username}
               </div>
 
-              <button>프로필 편집</button>
-              <button>보관된 스토리 보기</button>
+              <button className="btn">프로필 편집</button>
+              <button className="btn">보관된 스토리 보기</button>
               <svg
                 aria-label="옵션"
                 class="x1lliihq x1n2onr6 x5n08af"
@@ -84,6 +84,7 @@ const Profile = () => {
               <InfoNum title="팔로우"></InfoNum>
             </div>
             <button
+              className="btn"
               style={{
                 borderRadius: "14px",
                 width: "fit-content",

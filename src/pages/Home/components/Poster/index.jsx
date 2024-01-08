@@ -11,10 +11,13 @@ const Poster = ({ img, username, avatar }) => {
           <PostHeader username={username} avatar={avatar} />
         </header>
         <div className="poster-banner">
-          <img src={img} alt={username} />
+          <img src={img} alt={username} className="poster-banner" />
         </div>
         <div className="poster-footer">
-          <PostFooter username={username} />
+          <PostFooter
+            username={username}
+            likes={Math.floor(Math.random() * 100)}
+          />
         </div>
       </div>
     </div>

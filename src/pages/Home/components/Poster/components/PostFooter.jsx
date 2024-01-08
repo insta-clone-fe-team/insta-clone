@@ -5,18 +5,21 @@ import Comment from "./Comment";
 import Share from "./Share";
 import Save from "./Save";
 
-const PostFooter = ({ username }) => {
+const PostFooter = ({ username, likes }) => {
   const [liked, setLiked] = useState(false);
-  const [likes, setLikes] = useState(true);
+  // const [likes, setLikes] = useState(true);
 
+  // const handleLike = () => {
+  //   if (liked) {
+  //     setLiked(false);
+  //     setLikes(likes - 1);
+  //   } else {
+  //     setLiked(true);
+  //     setLikes(likes + 1);
+  //   }
+  // };
   const handleLike = () => {
-    if (liked) {
-      setLiked(false);
-      setLikes(likes - 1);
-    } else {
-      setLiked(true);
-      setLikes(likes + 1);
-    }
+    setLiked((prev) => !prev);
   };
 
   return (
@@ -63,7 +66,7 @@ const PostFooter = ({ username }) => {
 
       <div className="bottom-section">
         <div className="likes-text" style={{ fontWeight: "700" }}>
-          좋아요 {likes} 개
+          좋아요 {likes + liked} 개
         </div>
         <div
           className="user-text"
