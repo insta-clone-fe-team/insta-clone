@@ -19,7 +19,7 @@ const SideBar = () => {
       <InsIcon></InsIcon>
       <InsTextIcon></InsTextIcon>
       <div className="main-menu">
-        <HomeIcon style={{ fill: "currentColor" }}></HomeIcon>
+        <HomeIcon></HomeIcon>
         <SearchIcon></SearchIcon>
         <ExploreIcon></ExploreIcon>
         <ReelsIcon></ReelsIcon>

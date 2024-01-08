@@ -1,3 +1,6 @@
+:root {
+  --main-svg-color: black;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,8 +13,8 @@ body {
   color: black;
 }
 svg {
-  color: black;
-  fill: currentColor;
+  color: var(--main-svg-color);
+  /* fill: currentColor; */
 }
 .menu-single-wrap {
   padding: 12px;
