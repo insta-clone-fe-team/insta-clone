@@ -10,17 +10,13 @@ import NoticeIcon from "./components/icons/NoticeIcon";
 import ReelsIcon from "./components/icons/ReelsIcon";
 import SearchIcon from "./components/icons/SearchIcon";
 import ThreadsIcon from "./components/icons/ThreadsIcon";
-import defualtAvatar from "../../assets/defualtAvatar.jpg";
 import "./index.css";
 import Profile from "./components/icons/Profile";
-import LogoutIcon from "./components/icons/LogoutIcon";
-import useLogout from "../../hooks/useLogout";
 
 const SideBar = () => {
-  // const { handleLogout, isLoggingOut } = useLogout();
   return (
     <div className="sidebar-wrapper">
-      {/* <InsIcon></InsIcon> */}
+      <InsIcon></InsIcon>
       <InsTextIcon></InsTextIcon>
       <div className="main-menu">
         <HomeIcon style={{ fill: "currentColor" }}></HomeIcon>
@@ -34,15 +30,6 @@ const SideBar = () => {
       </div>
       <ThreadsIcon></ThreadsIcon>
       <MoreIcon></MoreIcon>
-      {/* <div className="logout-menu">
-        <button
-          onClick={handleLogout}
-          isLoggingOut={isLoggingOut}
-          style={{ background: "none", border: "none" }}
-        >
-          <LogoutIcon></LogoutIcon>
-        </button>
-      </div> */}
     </div>
   );
 };

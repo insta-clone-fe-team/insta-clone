@@ -7,9 +7,18 @@
   flex-direction: column;
   border-right: 1px solid #dbdbdb;
 }
+.ins-icon {
+  display: none;
+}
 @media (max-width: 1200px) {
   .sidebar-wrapper {
     width: 72px;
+  }
+  .ins-text-icon {
+    display: none;
+  }
+  .ins-icon {
+    display: block;
   }
 }
 

@@ -3,7 +3,9 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { firestore } from "../firebase/firebase";
 
-const useGetUserProfileByUserName = (userName = "hhh") => {
+const useGetUserProfileByUserName = () => {
+  const temp = localStorage.getItem("user-info");
+  const userName = JSON.parse(temp).username;
   const dispatch = useDispatch();
   const data = useSelector((state) => state);
   useEffect(() => {

@@ -1,8 +1,9 @@
 import React from "react";
+import "../../index.css";
 
 const InsIcon = () => {
   return (
-    <a>
+    <a className="ins-icon">
       <div className="menu-single-wrap">
         <svg
           aria-label="Instagram"

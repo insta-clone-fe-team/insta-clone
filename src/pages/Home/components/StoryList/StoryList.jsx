@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
-import defualtAvatar from "../../../../assets/defualtAvatar.jpg";
 
 const StoryList = () => {
   const [dataList, setDataList] = useState([]);

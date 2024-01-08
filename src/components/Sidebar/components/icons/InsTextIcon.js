@@ -2,7 +2,7 @@ import React from "react";
 
 const InsTextIcon = () => {
   return (
-    <a>
+    <a className="ins-text-icon">
       <div style={{ padding: "12px" }}>
         <svg
           aria-label="Instagram"

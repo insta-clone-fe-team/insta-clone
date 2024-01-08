@@ -43,6 +43,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-/* a:visited {
-  color: blue;
-} */
+
+::-webkit-scrollbar {
+  display: none;
+}
