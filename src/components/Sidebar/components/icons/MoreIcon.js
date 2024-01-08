@@ -60,13 +60,15 @@ const MoreIcon = () => {
           <div
             style={{
               position: "absolute",
-              top: "-400px",
+              top: "-80px",
               left: "0",
               display: "flex",
               flexDirection: "column",
+              height: "70px",
               width: "250px",
-              height: "388px",
-              backgroundColor: "yellowgreen",
+              borderRadius: "8px",
+              backgroundColor: "white",
+              boxShadow: "10px 5px 5px  #f3f3f3",
             }}
           >
             <button
