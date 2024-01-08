@@ -29,7 +29,9 @@ const Home = () => {
         <div className="home-center-area">
           <StoryList></StoryList>
           {dogList.map((item) => {
-            return <Poster avatar={item.url} img={item.url} />;
+            return (
+              <Poster avatar={item.url} img={item.url} username={item.id} />
+            );
           })}
         </div>
         <Recommend data={data}></Recommend>
